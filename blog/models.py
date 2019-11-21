@@ -20,6 +20,8 @@ class Post(models.Model): #статья по теме Мамочки
     def __str__(self):
         return self.title
 
+# class Page(models.Model):
+#     pass
 # class Comment(models.Model):
 #     author =
 #     title = models.CharField(max_length=200)
