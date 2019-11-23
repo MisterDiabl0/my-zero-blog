@@ -1,8 +1,7 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from .models import Post # . - point mean current directory or current app
+from django.utils import timezone
 
 def page(request):
-    return render(request, 'blog/page.html', {})
-
-# def page(request):
-#     return HttpResponse('ЗДРАВСТВУЙ, ПЛАНЕТА ЗЕМЛЯ')
+    pages = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+    return render(request, 'blog/page.html', {'pages':pages})

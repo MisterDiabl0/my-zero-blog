@@ -9,6 +9,7 @@ class Post(models.Model): #статья по теме Мамочки
     text = models.TextField()
     created_date = models.DateTimeField(default=timezone.now)
     published_date = models.DateTimeField(blank=True, null=True)
+    # redact
     # watching = models.                            #сколько просмотрело?
     # image = models.
     # video = models.
