@@ -135,7 +135,7 @@ STATIC_URL = '/static/'
 #     )
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
-STATIC_ROOT = '/django_blog/blog/static/css/blog.css'
+STATIC_ROOT = 'd/py_projects/WEB/django_blog/blog/static/css/blog.css'
 # MEDIA_URL = '/media/'
 # MEDIA_ROOT = str(BASE_DIR.joinpath('media'))
 
